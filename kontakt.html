@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Momo+Signature&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <title> Obiektywne szyny - kontakt </title>
+    </head>
+    <body>
+        <div class="grid">
+            <header>
+                <div class="header-content">
+                    <div class="logo">
+                        <a href="index.html"> <img src="content/logo.png" alt="Obiektywne szyny"> </a>
+                    </div>
+                    <div class="header-text momo-signature-regular">
+                        <h1> Kontakt </h1>
+                    </div>
+                </div>
+            </header>
+
+            <aside class="sidebar-left">
+                <nav>
+                    <p>
+                        <h3> Menu strony: </h3>
+                        <ul>
+                            <li> <a href="index.html"> Strona Główna </a> </li>
+                            <li> <a href="galeria.html"> Galeria </a> </li>
+                        </ul>
+                    </p>
+                    <p>
+                        <h3> Przydatne linki: </h3>
+                        <ul>
+                            <li> <a href="https://psmkms.krakow.pl"> PSMKMS </a> </li>
+                            <li> <a href="https://ztp.krakow.pl/kmk/komunikaty"> Komunikaty ZTP </a> </li>
+                            <li> <a href="https://bocznica.eu/"> Bocznica.eu </a> </li>
+                        </ul>
+                    </p>
+                </nav>
+            </aside>
+
+            <article>
+                    <h4>
+                        Autorem strony jest <strong> Stanisław Ogonowski </strong>.
+                    </h4>
+                    <h4>
+                        <a href="https://github.com/fistaszek017"> Link do Github </a>
+                    </h4>
+                    <h3>
+                        Bądźmy w kontakcie! Napisz wiadomość:
+                    </h3>
+                    <form id="contactForm">
+                        <label for="name">Imię:</label> <br>
+                        <input type="text" name="name" placeholder="Twoje imię" required>
+                        <br>
+                        <label for="email">Email:</label> <br>
+                        <input type="email" name="email" placeholder="Twój email" required>
+                        <br>
+                        <label for="topic">Temat:</label> <br>
+                        <select name="topic" id="topic">
+                            <option value="-">-</option>
+                            <option value="pytanie">Pytanie</option>
+                            <option value="współpraca">Współpraca</option>
+                            <option value="inne">Inne</option>
+                        </select>
+                        <br>
+                        <label for="message">Twoja wiadomość:</label> <br>
+                        <textarea name="message" placeholder="Twoja wiadomość" rows="4" required></textarea>
+                        <br>
+                        <button type="submit">Wyślij</button>
+                    </form>
+                    <div id="komunikat-poz" style="display: none; color: green;"> Dziękujemy za kontakt! </div>
+                    <script src="form.js"></script>
+            </article>
+
+            <aside class="sidebar-right">
+                <h3>Aktualna godzina:</h3>
+                <span id="clock"></span>
+                <script src="clock.js"></script>
+                <h3> Zdjęcie tygodnia: </h3>
+                <img src="content/img-oftheweek.png" alt="Pendolino w Szczecinie, źródło: Visit Szczecin">
+                <strong>
+                <a href="galeria.html"> Zobacz więcej zdjęć </a>
+                </strong>
+            </aside>
+            
+            <footer>
+                <h6>
+                    Page made by Stanisław Ogonowski
+                </h6>
+            </footer>
+        </div>
+    </body>
+</html>

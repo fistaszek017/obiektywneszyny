@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Momo+Signature&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <title> Obiektywne szyny - galeria </title>
+    </head>
+    <body>
+        <div class="grid">
+            <header>
+                <div class="header-content">
+                    <div class="logo">
+                        <a href="index.html"> <img src="content/logo.png" alt="Obiektywne szyny"> </a>
+                    </div>
+                    <div class="header-text momo-signature-regular">
+                        <h1> Galeria </h1>
+                        <h6> czyli najlepsze ujęcia ostatnich tygodni! </h6>
+                    </div>
+                </div>
+            </header>
+
+            <aside class="sidebar-left">
+                <nav>
+                    <p>
+                        <h3> Menu strony: </h3>
+                        <ul>
+                            <li> <a href="index.html"> Strona Główna </a> </li>
+                            <li> <a href="kontakt.html"> Kontakt </a> </li>
+                        </ul>
+                    </p>
+                    <p>
+                        <h3> Przydatne linki: </h3>
+                        <ul>
+                            <li> <a href="https://psmkms.krakow.pl"> PSMKMS </a> </li>
+                            <li> <a href="https://ztp.krakow.pl/kmk/komunikaty"> Komunikaty ZTP </a> </li>
+                            <li> <a href="https://bocznica.eu/"> Bocznica.eu </a> </li>
+                        </ul>
+                    </p>
+                </nav>
+            </aside>
+
+            <article>
+                <div class="gallery">
+                    <img src="content/img-oftheweek.png" alt="Zdjęcie tygodnia">
+                    <img src="content/ED250.jpg" alt="Pendolino">
+                    <img src="content/en57.jpg" alt="EN57">
+                    <img src="content/eu07.jpg" alt="EU07">
+                    <img src="content/impuls.jpg" alt="Impuls">
+                    <img src="content/st44.jpg" alt="ST44">
+
+                    <video controls>
+                        <source src="content/reptowo.mp4" type="video/mp4">
+                        Przeglądarka nie obsługuje odtwarzacza wideo.
+                    </video>
+                </div>
+            </article>
+
+            <aside class="sidebar-right">
+                <h3>Aktualna godzina:</h3>
+                <span id="clock"></span>
+                <script src="clock.js"></script>
+                <h3> Zdjęcie tygodnia: </h3>
+                <img src="content/img-oftheweek.png" alt="Pendolino w Szczecinie, źródło: Visit Szczecin">
+            </aside>
+            
+            <footer>
+                <h6>
+                    Page made by Stanisław Ogonowski
+                </h6>
+            </footer>
+        </div>
+    </body>
+</html>
